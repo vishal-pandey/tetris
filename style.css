@@ -27,7 +27,7 @@ body{
 	background-color: white;
 	display: flex;
 	align-items: center;
-	justify-content: fs;
+	justify-content: center;
 	flex-direction: column;
 }
 
@@ -80,7 +80,7 @@ h1 small{
 
 .content{
 	width: 400px;
-	height: 600px;
+	height: 520px;
 	background-color: lightgrey;
 	box-shadow: 2px 2px 5px grey inset, -2px -2px 5px grey inset;
 	position: relative;

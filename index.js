@@ -13,23 +13,27 @@ var is_active = 1
 var shapes = ['square', 'shapel-h', 'shapel-v', 'shapet-d', 'shapet-u']
 
 var grid = []
-for(var i=0; i<play_area_height/unit; i++){
-	let row = []
-	for(var j=0; j<play_area_width/unit; j++){
-		row.push(1)
-	}
-	grid.push(row)
-}
-
-let row = []
-for(var j=0; j<play_area_width/unit; j++){
-	row.push(0)
-}
-grid.push(row)
 
 window.onload = ()=>{
 	play_area_height = document.querySelector(".content").offsetHeight
 	play_area_width = document.querySelector(".content").offsetWidth
+
+	
+	for(var i=0; i<play_area_height/unit; i++){
+		let row = []
+		for(var j=0; j<play_area_width/unit; j++){
+			row.push(1)
+		}
+		grid.push(row)
+	}
+
+	let row = []
+	for(var j=0; j<play_area_width/unit; j++){
+		row.push(0)
+	}
+	grid.push(row)
+
+	
 	// addPeice('shapet-u')
 
 	document.querySelector(".start-game").onclick = ()=>{
