@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tetris</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="index.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<section class="container">
+	<h1>Tetris Arcade</h1>
+	<section class="content">
+	</section>
+	<section class="mobile-buttons">
+		<button class="flip">FLIP</button>
+		<button class="fast">FAST</button>
+	</section>
+	<span class="result">
+		<span class="over">GAME</span>
+		<span class="over">OVER</span>
+		<span></span>
+		<span>Start Again</span>
+	</span>
+	<span class="start-game">
+		<span class="start">
+			START
+		</span>
+	</span>
+</section>
+
+<span class="instruction-button">i</span>
+<span class="github-button"><img src="https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" width="20" height="20"></span>
+
+<section class="instruction">
+	<h1>Instructions</h1>
+	<span class="desktop">1. Left arrow key to move piece left</span>
+	<span class="desktop">2. Right arrow key to move piece right</span>
+	<span class="desktop">3. Up arrow key to flip piece</span>
+	<span class="desktop">4. Down arrow key to move piece fast</span>
+	<span class="desktop">About Developer <a href="https://www.vishalpandey.co.in/">Vishal Pandey</a></span>
+
+
+	<span class="mobile">1. Tap left to move piece left</span>
+	<span class="mobile">2. Tap right to move piece right</span>
+	<span class="mobile">3. Tap flip button to flip piece</span>
+	<span class="mobile">4. Hold fast button to move piece fast</span>
+
+
+	<span class="close-instruction">Close</span>
+</section>
+
+
+
+<audio id="start">
+  <source src="sounds/start.mp3" type="audio/mp3">
+</audio>
+
+<audio id="music" loop="true">
+  <source src="sounds/music.mp3" type="audio/mp3">
+</audio>
+
+<audio id="slow-hit">
+  <source src="sounds/slow-hit.mp3" type="audio/mp3">
+</audio>
+
+<audio id="finish">
+  <source src="sounds/gameover.mp3" type="audio/mp3">
+</audio>
+<audio id="move">
+  <source src="http://www.threecaster.com/wavy/m_move.wav" type="audio/wav">
+</audio>
+<audio id="selection">
+  <source src="sounds/select.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>
